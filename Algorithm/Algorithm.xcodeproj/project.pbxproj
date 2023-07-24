@@ -6,6 +6,10 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A8E65672A6EBB52006E1E1E /* 5073.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E65662A6EBB52006E1E1E /* 5073.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		3A8E65502A6EB2D3006E1E1E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,6 +25,8 @@
 /* Begin PBXFileReference section */
 		3A8E65522A6EB2D3006E1E1E /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8E65552A6EB2D3006E1E1E /* 23971.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 23971.swift; sourceTree = "<group>"; };
+		3A8E65652A6EBB47006E1E1E /* Algorithm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Algorithm-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A8E65662A6EBB52006E1E1E /* 5073.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5073.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,9 @@
 		3A8E655C2A6EB39B006E1E1E /* BOJ */ = {
 			isa = PBXGroup;
 			children = (
+				3A8E65662A6EBB52006E1E1E /* 5073.swift */,
 				3A8E65552A6EB2D3006E1E1E /* 23971.swift */,
+				3A8E65652A6EBB47006E1E1E /* Algorithm-Bridging-Header.h */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 				TargetAttributes = {
 					3A8E65512A6EB2D3006E1E1E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -124,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8E65672A6EBB52006E1E1E /* 5073.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +256,13 @@
 		3A8E655A2A6EB2D3006E1E1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UAM52RQFW9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Algorithm/BOJ/Algorithm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -257,10 +270,12 @@
 		3A8E655B2A6EB2D3006E1E1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UAM52RQFW9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Algorithm/BOJ/Algorithm-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

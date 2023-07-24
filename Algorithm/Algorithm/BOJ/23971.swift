@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  23971.swift
 //  Algorithm
 //
 //  Created by 황정현 on 2023/07/24.
